@@ -3,39 +3,53 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Valentine's Day card</title>
+  <title>Valentine’s Card</title>
   <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-  <div id="card">
-    <center><h1>Valentine’s Day Card</h1></center>
+  <div class="bg-hearts" aria-hidden="true"></div>
 
-    <div class="heart" id="heart1">
-      <div class="half half1">
-        <div class="circle"></div>
-        <div class="rec"></div>
-      </div>
-      <div class="half half2">
-        <div class="circle"></div>
-        <div class="rec"></div>
+  <main class="stage">
+    <div class="card-shell" id="shell">
+      <div class="glow"></div>
+
+      <div class="card" id="card">
+        <header class="top">
+          <div class="badge">💌 For You</div>
+          <h1>Valentine’s Day</h1>
+          <p class="sub">hover / tap to open</p>
+        </header>
+
+        <section class="envelope">
+          <div class="heart heart1" id="heart1">
+            <div class="half half1"><div class="circle"></div><div class="rec"></div></div>
+            <div class="half half2"><div class="circle"></div><div class="rec"></div></div>
+          </div>
+
+          <div class="message" id="message">
+            <h2 id="typed"></h2>
+            <p class="hint" id="hint">👆 Click the button</p>
+            <div class="actions">
+              <button class="btn" id="btnYes">Yes 💖</button>
+              <button class="btn ghost" id="btnNo">No 🙈</button>
+            </div>
+          </div>
+
+          <div class="heart heart2" id="heart2">
+            <div class="half half1"><div class="circle"></div><div class="rec"></div></div>
+            <div class="half half2"><div class="circle"></div><div class="rec"></div></div>
+          </div>
+        </section>
+
+        <footer class="footer">
+          <span>Made with ❤️</span>
+          <span class="mini">— from Yiwei</span>
+        </footer>
       </div>
     </div>
+  </main>
 
-    <div id="message">
-      <h2>Happy Valentine’s Day, My Dear My~🫶</h2>
-    </div>
-
-    <div class="heart" id="heart2">
-      <div class="half half1">
-        <div class="circle"></div>
-        <div class="rec"></div>
-      </div>
-      <div class="half half2">
-        <div class="circle"></div>
-        <div class="rec"></div>
-      </div>
-    </div>
-  </div>
+  <script src="./script.js"></script>
 </body>
 </html>
